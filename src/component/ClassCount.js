@@ -6,6 +6,7 @@ class ClassCount extends Component {
 
         this.state = {
             count: 0,
+            name: "",
         };
     }
     componentDidMount() {
@@ -14,7 +15,10 @@ class ClassCount extends Component {
     }
 
     componentDidUpdate(prevProps, prevState) {
-        document.title = `Vous avez cliqué ${this.state.count}`;
+        if (this.state.count !== prevState.count) {
+            console.log("je suis la");
+            document.title = `Vous avez cliqué ${this.state.count}`;
+        }
     }
     render() {
         return (
@@ -27,6 +31,15 @@ class ClassCount extends Component {
                 >
                     Apuyer ici
                 </button>
+                <input
+                    type="text"
+                    value={this.state.name}
+                    onChange={(e) => {
+                        this.setState({
+                            name: e.target.value,
+                        });
+                    }}
+                />
             </div>
         );
     }
