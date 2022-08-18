@@ -8,7 +8,7 @@ const FunctionState = () => {
     };
     return (
         <div>
-            <p>incremente : </p>
+            <p>incremente : {count} </p>
             <button onClick={addOne}>incrémenté + 2</button>
         </div>
     );
