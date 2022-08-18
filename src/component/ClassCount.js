@@ -14,12 +14,7 @@ class ClassCount extends Component {
         document.title = `Vous avez cliqué ${this.state.count}`;
     }
 
-    componentDidUpdate(prevProps, prevState) {
-        if (this.state.count !== prevState.count) {
-            console.log("je suis la");
-            document.title = `Vous avez cliqué ${this.state.count}`;
-        }
-    }
+
     render() {
         return (
             <div>
