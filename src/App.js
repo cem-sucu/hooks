@@ -1,14 +1,17 @@
+import React from "react";
 import "./App.css";
-import Container from "./component/Container";
+import Count from "./component/Count";
 
-function App() {
-    return (
-        <div className="App">
-            <header className="App-header">
-                <Container />
-            </header>
-        </div>
-    );
+class App extends React.Component {
+    render() {
+        return (
+            <div className="App">
+                <header className="App-header">
+                    <Count />
+                </header>
+            </div>
+        );
+    }
 }
 
 export default App;
