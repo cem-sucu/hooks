@@ -1,14 +1,13 @@
 import React from "react";
 import "./App.css";
-import Input from "./component/Input";
-import Title from "./component/Title";
+import Layout from "./component/Layout";
 
 function App() {
     return (
         <div className="App">
             <header className="App-header">
-                <Title />
-                <Input />
+                <Layout />
+                
             </header>
         </div>
     );
