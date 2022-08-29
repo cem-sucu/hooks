@@ -1,18 +1,12 @@
-import React from "react";
-import "./App.css";
-import ClickSayHello from "./component/ClickSayHello";
-import MyContacts from "./component/MyContacts";
+import './App.css';
+import MyContacts from './components/MyContacts';
 
-function App() {
+const App = () => {
     return (
-        <div className="App">
-            <header className="App-header">
-                <h1>Mes Contacts</h1>
-                <MyContacts />
-                <ClickSayHello />
-            </header>
+        <div className='App'>
+            <h1>Mes Contacts</h1>
+           <MyContacts />
         </div>
-    );
+    )
 }
-
 export default App;
